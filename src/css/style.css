@@ -1,0 +1,113 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/bg-desktop.svg') center center no-repeat;
+    background-color: #7D26CD;
+    height: 100vh;
+    padding: 40px;
+}
+
+.header img{
+    margin-bottom: 30px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.conteudo .imagem{
+    width: 100%;
+}
+
+.conteudo .info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.conteudo .info h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.conteudo .info p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.conteudo .info a{
+    background-color: #fff;
+    font-size: 1.4rem;
+    padding: 20px;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 30px;
+    color: #7D26CD;
+    transition: 0.3s;
+}
+
+.conteudo .info a:hover{
+    background-color: #FFAEB9;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    gap: 25px;
+    justify-content: right;
+}
+
+.social a{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.social a i:hover{
+    background-color: #FFAEB9;
+}
+
+@media (max-width: 425px){
+    body{
+        background: url('../images/bg-mobile.svg') center center no-repeat;
+        background-color: #836FFF;
+    }
+
+    .header img{
+        width: 130px;
+    }
+
+    .conteudo{
+        display: block;
+    }
+
+    .info{
+        display: block;
+        align-items: center;
+    }
+
+    .conteudo .info h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .conteudo .info p{
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+        padding: 50px;
+    }
+
+    .social a{
+        font-size: 1.6rem;
+    }
+}
